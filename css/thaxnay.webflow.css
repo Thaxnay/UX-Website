@@ -651,11 +651,11 @@ h4 {
     object-fit: cover;
   }
   .button-2 {
-    margin-top: 0px;
+    margin-top: 16px;
   }
   .gallery-image {
-    -o-object-fit: contain;
-    object-fit: contain;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
   .div-block-11 {
     width: 24px;
@@ -724,6 +724,12 @@ h4 {
   .div-block-12 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  .link-block-2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -817,6 +823,17 @@ h4 {
     height: auto;
   }
   .button-2 {
+    display: block;
+    margin-top: 40px;
+  }
+  .button-2.second {
+    margin-top: 16px;
+  }
+  .gallery-image {
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .link-block-2 {
     display: block;
   }
 }
