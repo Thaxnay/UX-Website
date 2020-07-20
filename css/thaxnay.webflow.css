@@ -48,6 +48,7 @@ h4 {
 }
 
 a {
+  color: #333;
   text-decoration: underline;
 }
 
@@ -127,6 +128,10 @@ a {
 
 .bold.sub-heading.centre-align {
   text-align: center;
+}
+
+.bold.sub-heading.centre-align.margin-top-40px {
+  margin-top: 80px;
 }
 
 .bold._24px-bottom {
@@ -495,10 +500,10 @@ a {
   padding-top: 120px;
 }
 
-.grid-portfolio-section {
+.container-grid-portfolio-section {
   display: -ms-grid;
   display: grid;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 40px;
   grid-auto-flow: row;
   grid-auto-columns: 1fr;
@@ -508,6 +513,10 @@ a {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
+}
+
+.container-grid-portfolio-section.first {
+  margin-top: 40px;
 }
 
 .image-7 {
@@ -528,8 +537,8 @@ a {
   text-decoration: none;
 }
 
-.button-2 {
-  min-width: 96px;
+.portfolio-button {
+  min-width: 184px;
   margin-top: 40px;
   padding: 14px 24px;
   border: 4px solid #303030;
@@ -541,7 +550,7 @@ a {
   text-align: center;
 }
 
-.button-2:hover {
+.portfolio-button:hover {
   border: 4px solid #303030;
   background-color: #fff;
   color: #303030;
@@ -596,7 +605,46 @@ a {
   cursor: pointer;
 }
 
+.container-grid-more-section {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 40px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.more-section-text {
+  margin-top: 24px;
+}
+
+.more-block {
+  text-decoration: none;
+}
+
+.more-image {
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.more-image-block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+}
+
 @media screen and (max-width: 991px) {
+  .body-large {
+    font-size: 16px;
+    line-height: 28px;
+  }
   .grid-2 {
     grid-row-gap: 80px;
     -ms-grid-columns: 1fr;
@@ -663,7 +711,7 @@ a {
   .dropdown-toggle.w--open {
     background-color: #fff;
   }
-  .grid-portfolio-section {
+  .container-grid-portfolio-section {
     grid-column-gap: 24px;
   }
   .image-7 {
@@ -671,7 +719,7 @@ a {
     -o-object-fit: cover;
     object-fit: cover;
   }
-  .button-2 {
+  .portfolio-button {
     margin-top: 16px;
   }
   .gallery-image {
@@ -745,6 +793,28 @@ a {
   .div-block-12 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+  .link-block-2 {
+    max-width: 100%;
+  }
+  .portfolio-section-body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 }
 
@@ -827,7 +897,7 @@ a {
   .brand {
     padding-top: 12px;
   }
-  .grid-portfolio-section {
+  .container-grid-portfolio-section {
     padding-right: 16px;
     padding-left: 16px;
     grid-row-gap: 40px;
@@ -837,11 +907,11 @@ a {
   .image-7 {
     height: auto;
   }
-  .button-2 {
+  .portfolio-button {
     display: block;
     margin-top: 40px;
   }
-  .button-2.second {
+  .portfolio-button.second {
     margin-top: 16px;
   }
   .gallery-image {
@@ -850,6 +920,13 @@ a {
   }
   .link-block-2 {
     display: block;
+  }
+  .container-grid-more-section {
+    padding-right: 16px;
+    padding-left: 16px;
+    grid-row-gap: 40px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -894,6 +971,28 @@ a {
 }
 
 #w-node-2a00597077e6-f1058aef {
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+}
+
+#w-node-bafd4c35509a-f1058aef {
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-column: 1;
+  grid-column-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+  -ms-grid-row: 1;
+  grid-row-start: 1;
+}
+
+#w-node-2aee4b601fef-f1058aef {
   -ms-grid-column-span: 1;
   grid-column-end: 2;
   -ms-grid-column: 1;
