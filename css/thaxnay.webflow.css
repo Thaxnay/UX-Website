@@ -256,6 +256,10 @@ a {
   margin-top: 80px;
 }
 
+.grid-3._80px-top.hidden {
+  display: none;
+}
+
 .div-block-5 {
   display: -webkit-box;
   display: -webkit-flex;
