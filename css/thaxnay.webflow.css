@@ -1076,6 +1076,14 @@ a {
   background-color: #000;
 }
 
+.div-block-24 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 991px) {
   .body-large {
     font-size: 16px;
@@ -1487,11 +1495,25 @@ a {
 
   .logo {
     max-height: 75%;
+    max-width: 50%;
   }
 
   .container-9 {
     padding-right: 16px;
     padding-left: 16px;
+  }
+
+  .logo-link {
+    margin-top: 20px;
+  }
+
+  .div-block-24 {
+    margin-top: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -1595,6 +1617,18 @@ a {
   .container-9 {
     padding-right: 16px;
     padding-left: 16px;
+  }
+
+  .logo-link {
+    margin-top: 40px;
+  }
+
+  .div-block-24 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
